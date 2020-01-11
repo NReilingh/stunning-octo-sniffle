@@ -1,0 +1,13 @@
+name: Env Check
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: [macos-latest]
+
+    steps:
+    - name: Run a one-line script
+      run: ls -la /System/Library/Frameworks/
+
